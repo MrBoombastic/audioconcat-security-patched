@@ -18,13 +18,13 @@ If you want to use `audioconcat` in Heroku, you could use the [ffmpeg2](https://
 ## Install
 
 ```bash
-npm install audioconcat
+npm install audioconcat-security-patched
 ```
 
 ## Usage
 
 ```js
-var audioconcat = require('audioconcat')
+var audioconcat = require('audioconcat-security-patched')
 
 var songs = [
   'beatles.mp3',
