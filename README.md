@@ -1,6 +1,6 @@
 # audioconcat [![Build Status](https://api.travis-ci.org/h2non/audioconcat.svg?branch=master)][travis] [![NPM](https://img.shields.io/npm/v/audioconcat.svg)][npm]
 
-Tiny [node.js](http://nodejs.org) module to concat multiple audio files using [ffmpeg](http://ffmpeg.org)
+Tiny [node.js](http://nodejs.org) module to concat multiple audio files using [ffmpeg](http://ffmpeg.org), but lodash.merge is updated, so it's not affected with [this bug](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10744).
 
 audioconcat provides a programmatic interface to do basically the same as calling `ffmpeg` via CLI like:
 ```
