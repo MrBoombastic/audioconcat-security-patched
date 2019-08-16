@@ -1,9 +1,9 @@
 {
-  "name": "audioconcat",
+  "name": "audioconcat-security-patched",
   "version": "0.1.3",
   "description": "Concat multiple audio files into a unique one (uses ffmpeg)",
-  "repository": "h2non/audioconcat",
-  "author": "Tomas Aparicio",
+  "repository": "https://github.com/MrBoombastic/audioconcat-security-patched",
+  "author": "Tomas Aparicio, MrBoombastic",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha --timeout 300000 --reporter spec --ui tdd"
