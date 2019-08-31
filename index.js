@@ -1,9 +1,7 @@
 var merge = require('lodash.merge')
 var ffmpeg = require('fluent-ffmpeg')
 var version = require('./package.json').version
-module.exports = exports = function (inputs, opts) {
-  return new Audioconcat(inputs, opts)
-}
+module.exports = exports = function (inputs, opts) {return new Audioconcat(inputs, opts)}
 exports.VERSION = version
 exports.ffmpeg = ffmpeg
 function Audioconcat(inputs, opts) {
@@ -15,19 +13,13 @@ Audioconcat.prototype.options = function (opts) {
   return this
 }
 Audioconcat.prototype.concat = function (file) {
-  if (file) {
-    this.opts.output = file
-  }
+  if (file) this.opts.output = file
   return concat(this.inputs, this.opts)
 }
 function concat(inputs, opts) {
-  var filter = 'concat:' + inputs.join('|')
   var renderer = ffmpeg()
-    .input(filter)
+    .input('concat:' + inputs.join('|'))
     .outputOptions('-acodec copy')
-  var output = opts.output
-  if (output) {
-    return renderer.save(output)
-  }
+  if (opts.output) return renderer.save(opts.output)
   return renderer
 }
