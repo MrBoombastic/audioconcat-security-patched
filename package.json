@@ -23,7 +23,7 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
+    "chai": "^4.2.0",
     "mocha": "^2.0.1"
   }
 }
